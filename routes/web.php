@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'Home@index')->name('homepage');
+Route::get('/discover/{id}', 'App@show')->name('preview');
+Route::post('/discover/{id}', 'App@store')->name('download');
+Route::get('/{category}', 'Category@show')->name('category');
+Route::get('/{category}/{id}', 'Category@show')->name('cat');
+Route::get('/{category}/{app}', 'App@index')->name('app');

@@ -3375,7 +3375,7 @@ body.no-scroll {
 .preloader .preloader-icon {
   border: 5px solid #eeeeee;
   border-radius: 50%;
-  border-top: 5px solid #3498db;
+  border-top: 5px solid orangered;
   width: 50px;
   height: 50px;
   -webkit-animation: spin 0.5s linear infinite;
@@ -3405,7 +3405,7 @@ body.no-scroll {
 }
 
 .preloader svg path {
-  fill: #0081ff;
+  fill: orangered;
 }
 
 .icon-block {
@@ -3432,8 +3432,8 @@ body.no-scroll {
 }
 
 .icon-block.icon-block-outline-primary {
-  border: 2px solid #0081ff;
-  color: #0081ff !important;
+  border: 2px solid orangered;
+  color: orangered !important;
   background: none;
 }
 
@@ -3468,8 +3468,8 @@ body.no-scroll {
 }
 
 .icon-block.icon-block-outline-secondary {
-  border: 2px solid #aa66cc;
-  color: #aa66cc !important;
+  border: 2px solid orangered;
+  color: orangered !important;
   background: none;
 }
 
@@ -3592,19 +3592,19 @@ body.error-page .display-1 {
 .custom-select {
   font-size: 0.875rem;
   border-color: #e1e1e1;
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
 }
 
 .form-control:focus,
 .swal-modal input.swal-content__input:focus,
 .custom-select:focus {
   box-shadow: none;
-  border-color: rgba(0, 129, 255, 0.8);
+  border-color: orangered;
 }
 
 .form-control:not(.form-control-lg):not(.form-control-sm),
 .swal-modal input.swal-content__input:not(.form-control-lg):not(.form-control-sm) {
-  height: calc(1.5em + .75rem + 3px);
+  height: calc(2.5em + 3px);
 }
 
 .form-rounded {
@@ -3624,8 +3624,8 @@ body.error-page .display-1 {
 }
 
 textarea {
-  min-height: 100px;
-  max-height: 500px;
+  min-height: 7.5rem;
+  max-height: 35rem;
 }
 
 .custom-file-input:focus ~ .custom-file-label {
@@ -3646,28 +3646,28 @@ textarea {
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before,
 .custom-radio .custom-control-input:checked ~ .custom-control-label::before,
 .custom-switch .custom-control-input:checked ~ .custom-control-label::before {
-  border-color: #0081ff;
-  background-color: #0081ff;
+  border-color: orangered;
+  background-color: orangered;
 }
 
 .custom-checkbox .custom-control-input:focus ~ .custom-control-label::before,
 .custom-radio .custom-control-input:focus ~ .custom-control-label::before,
 .custom-switch .custom-control-input:focus ~ .custom-control-label::before {
-  box-shadow: 0 0 0 0.2rem rgba(0, 129, 255, 0.3);
+  box-shadow: 0 0 0 0.15rem orangered;
 }
 
 .custom-checkbox .custom-control-input:not(:disabled):active ~ .custom-control-label::before,
 .custom-radio .custom-control-input:not(:disabled):active ~ .custom-control-label::before,
 .custom-switch .custom-control-input:not(:disabled):active ~ .custom-control-label::before {
-  border-color: #5caeff;
-  background-color: #5caeff;
+  border-color: orangered;
+  background-color: orangered;
 }
 
 .custom-checkbox.custom-checkbox-secondary .custom-control-input:checked ~ .custom-control-label::before,
 .custom-radio.custom-checkbox-secondary .custom-control-input:checked ~ .custom-control-label::before,
 .custom-switch.custom-checkbox-secondary .custom-control-input:checked ~ .custom-control-label::before {
-  border-color: #aa66cc;
-  background-color: #aa66cc;
+  border-color: orangered;
+  background-color: orangered;
 }
 
 .custom-checkbox.custom-checkbox-secondary .custom-control-input:not(:disabled):active ~ .custom-control-label::before,
@@ -3680,7 +3680,7 @@ textarea {
 .custom-checkbox.custom-checkbox-secondary .custom-control-input:focus ~ .custom-control-label::before,
 .custom-radio.custom-checkbox-secondary .custom-control-input:focus ~ .custom-control-label::before,
 .custom-switch.custom-checkbox-secondary .custom-control-input:focus ~ .custom-control-label::before {
-  box-shadow: 0 0 0 0.2rem rgba(170, 102, 204, 0.3);
+  box-shadow: 0 0 0 0.15rem rgba(170, 102, 204, 0.3);
 }
 
 .custom-checkbox.custom-checkbox-success .custom-control-input:checked ~ .custom-control-label::before,
@@ -3700,7 +3700,7 @@ textarea {
 .custom-checkbox.custom-checkbox-success .custom-control-input:focus ~ .custom-control-label::before,
 .custom-radio.custom-checkbox-success .custom-control-input:focus ~ .custom-control-label::before,
 .custom-switch.custom-checkbox-success .custom-control-input:focus ~ .custom-control-label::before {
-  box-shadow: 0 0 0 0.2rem rgba(40, 199, 111, 0.3);
+  box-shadow: 0 0 0 0.15rem rgba(40, 199, 111, 0.3);
 }
 
 .custom-checkbox.custom-checkbox-danger .custom-control-input:checked ~ .custom-control-label::before,
@@ -3720,7 +3720,7 @@ textarea {
 .custom-checkbox.custom-checkbox-danger .custom-control-input:focus ~ .custom-control-label::before,
 .custom-radio.custom-checkbox-danger .custom-control-input:focus ~ .custom-control-label::before,
 .custom-switch.custom-checkbox-danger .custom-control-input:focus ~ .custom-control-label::before {
-  box-shadow: 0 0 0 0.2rem rgba(234, 84, 85, 0.3);
+  box-shadow: 0 0 0 0.15rem rgba(234, 84, 85, 0.3);
 }
 
 .custom-checkbox.custom-checkbox-warning .custom-control-input:checked ~ .custom-control-label::before,
@@ -3740,7 +3740,7 @@ textarea {
 .custom-checkbox.custom-checkbox-warning .custom-control-input:focus ~ .custom-control-label::before,
 .custom-radio.custom-checkbox-warning .custom-control-input:focus ~ .custom-control-label::before,
 .custom-switch.custom-checkbox-warning .custom-control-input:focus ~ .custom-control-label::before {
-  box-shadow: 0 0 0 0.2rem rgba(255, 159, 67, 0.3);
+  box-shadow: 0 0 0 0.15rem rgba(255, 159, 67, 0.3);
 }
 
 .custom-checkbox.custom-checkbox-info .custom-control-input:checked ~ .custom-control-label::before,
@@ -3760,7 +3760,7 @@ textarea {
 .custom-checkbox.custom-checkbox-info .custom-control-input:focus ~ .custom-control-label::before,
 .custom-radio.custom-checkbox-info .custom-control-input:focus ~ .custom-control-label::before,
 .custom-switch.custom-checkbox-info .custom-control-input:focus ~ .custom-control-label::before {
-  box-shadow: 0 0 0 0.2rem rgba(51, 181, 229, 0.3);
+  box-shadow: 0 0 0 0.15rem rgba(51, 181, 229, 0.3);
 }
 
 .custom-checkbox.custom-checkbox-dark .custom-control-input:checked ~ .custom-control-label::before,
@@ -3780,7 +3780,7 @@ textarea {
 .custom-checkbox.custom-checkbox-dark .custom-control-input:focus ~ .custom-control-label::before,
 .custom-radio.custom-checkbox-dark .custom-control-input:focus ~ .custom-control-label::before,
 .custom-switch.custom-checkbox-dark .custom-control-input:focus ~ .custom-control-label::before {
-  box-shadow: 0 0 0 0.2rem rgba(41, 49, 52, 0.3);
+  box-shadow: 0 0 0 0.15rem rgba(41, 49, 52, 0.3);
 }
 
 .custom-checkbox.custom-range-danger::before {
@@ -3792,11 +3792,11 @@ textarea {
 }
 
 .custom-range::-webkit-slider-thumb {
-  background-color: #0081ff;
+  background-color: orangered;
 }
 
 .custom-range::-webkit-slider-thumb:active {
-  background-color: #5caeff;
+  background-color: orangered;
 }
 
 .custom-range.custom-range-danger::-webkit-slider-thumb {
@@ -3824,7 +3824,7 @@ textarea {
 }
 
 .custom-range.custom-range-secondary::-webkit-slider-thumb {
-  background-color: #aa66cc;
+  background-color: orangered;
 }
 
 .custom-range.custom-range-secondary::-webkit-slider-thumb:active {
@@ -3912,7 +3912,7 @@ textarea {
 .header form .input-group .input-group-append .wizard > .steps .current button.btn,
 .wizard > .steps .current a:hover,
 .wizard > .steps .current a:active {
-  background: #0081ff;
+  background: orangered;
 }
 
 .wizard > .steps .error a,
@@ -3946,7 +3946,7 @@ textarea {
   display: flex;
   -webkit-box-align: start;
           align-items: flex-start;
-  height: 55px;
+  height: 40px;
 }
 
 .page-header h1,
@@ -3986,7 +3986,7 @@ textarea {
 }
 
 .page-header .breadcrumb li.breadcrumb-item.active {
-  color: #0081ff;
+  color: orangered;
   font-weight: 600;
 }
 
@@ -4055,9 +4055,9 @@ textarea {
 .chat-block .card-footer {
   border: none;
   background: none;
-  font-size: 13px;
+  font-size: 0.83rem;
   font-weight: 600;
-  padding: 10px 20px;
+  padding: 2rem 1.85rem;
 }
 
 .card .card-header,
@@ -4173,13 +4173,29 @@ textarea {
   margin-bottom: 30px;
 }
 
+.quick-nav {
+  margin: 0!important;
+  padding: 1rem;
+  border-top: 1px orangered solid;
+  border-radius: 0!important
+}
+.quick-nav a {
+  font-size: 1rem!important;
+}
+
+.quick-nav .active {
+  background-color: orangered!important;
+  color: white!important;
+  padding: 1rem!important;
+}
+
 .bg-primary {
-  background: #0081ff !important;
+  background: orangered !important;
   color: white !important;
 }
 
 .bg-primary-bright {
-  background: rgba(0, 129, 255, 0.3) !important;
+  background: orangered !important;
 }
 
 .bg-primary-bright.bg-hover {
@@ -4192,7 +4208,7 @@ textarea {
 }
 
 .bg-primary-gradient {
-  background: linear-gradient(230deg, #0081ff, #4da7ff) !important;
+  background: linear-gradient(230deg, orangered, #4da7ff) !important;
   color: white !important;
 }
 
@@ -4229,7 +4245,7 @@ textarea {
 }
 
 .bg-secondary {
-  background: #aa66cc !important;
+  background: orangered !important;
   color: white !important;
 }
 
@@ -4256,7 +4272,7 @@ textarea {
 }
 
 .bg-secondary-gradient {
-  background: linear-gradient(230deg, #aa66cc, #ca9fdf) !important;
+  background: linear-gradient(230deg, orangered, #ca9fdf) !important;
   color: white !important;
 }
 
@@ -4433,11 +4449,11 @@ textarea {
 }
 
 .text-primary {
-  color: #0081ff !important;
+  color: orangered !important;
 }
 
 .text-secondary {
-  color: #aa66cc !important;
+  color: orangered !important;
 }
 
 .text-info {
@@ -4575,7 +4591,7 @@ ul.links .header form .input-group .input-group-append button.btn,
 ul.links a.active,
 ul.links .header form .input-group .input-group-append button.active.btn,
 .header form .input-group .input-group-append ul.links button.active.btn {
-  color: #0081ff;
+  color: orangered;
   font-weight: 500;
 }
 
@@ -4663,7 +4679,7 @@ a:hover,
 
 a.link-1,
 .header form .input-group .input-group-append button.link-1.btn {
-  color: #0081ff;
+  color: orangered;
 }
 
 a.link-1:hover,
@@ -4682,7 +4698,7 @@ a.link-2:hover,
 .header form .input-group .input-group-append button.link-2.btn:hover,
 a.link-2:focus,
 .header form .input-group .input-group-append button.link-2.btn:focus {
-  color: #0081ff;
+  color: orangered;
 }
 
 a.link-3,
@@ -4694,7 +4710,7 @@ a.link-3:hover,
 .header form .input-group .input-group-append button.link-3.btn:hover,
 a.link-3:focus,
 .header form .input-group .input-group-append button.link-3.btn:focus {
-  color: #0081ff;
+  color: orangered;
 }
 
 a:not(.active.list-group-item),
@@ -4720,11 +4736,11 @@ a.btn:focus,
 }
 
 .page-link {
-  color: #0081ff;
+  color: orangered;
 }
 
 .page-link:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 129, 255, 0.3);
+  box-shadow: 0 0 0 0.15rem orangered;
 }
 
 .btn {
@@ -4735,9 +4751,9 @@ a.btn:focus,
   font-weight: 600;
   -webkit-box-align: center;
           align-items: center;
-  padding: 10px 15px;
-  line-height: 14px;
-  border-radius: 0.5rem;
+  padding: 10px 20px;
+  line-height: 19px;
+  border-radius: 0.21rem;
 }
 
 .btn svg {
@@ -4835,8 +4851,8 @@ a.btn[href="#next"],
 .header form .input-group .input-group-append button.btn[href="#next"],
 a.btn[href="#previous"],
 .header form .input-group .input-group-append button.btn[href="#previous"] {
-  background: #0081ff;
-  border-color: #0081ff;
+  background: orangered;
+  border-color: orangered;
 }
 
 .btn.btn-primary:not(:disabled):not(.disabled):hover,
@@ -4854,8 +4870,8 @@ a.btn[href="#next"]:not(:disabled):not(.disabled):active,
 .header form .input-group .input-group-append button.btn[href="#next"]:not(:disabled):not(.disabled):active,
 a.btn[href="#previous"]:not(:disabled):not(.disabled):active,
 .header form .input-group .input-group-append button.btn[href="#previous"]:not(:disabled):not(.disabled):active {
-  background: #0067cc;
-  border-color: #0067cc;
+  background: darkorange;
+  border-color: darkorange;
 }
 
 .btn.btn-primary:not(:disabled):not(.disabled):focus,
@@ -4863,7 +4879,7 @@ a.btn[href="#next"]:not(:disabled):not(.disabled):focus,
 .header form .input-group .input-group-append button.btn[href="#next"]:not(:disabled):not(.disabled):focus,
 a.btn[href="#previous"]:not(:disabled):not(.disabled):focus,
 .header form .input-group .input-group-append button.btn[href="#previous"]:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 129, 255, 0.4) !important;
+  box-shadow: 0 0 0 0.15rem rgba(0, 129, 255, 0.4) !important;
 }
 
 .btn.btn-primary.btn-pulse:not(:disabled):not(.disabled),
@@ -4884,7 +4900,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-gradient-primary {
-  background: linear-gradient(20deg, #4da7ff, #0067cc);
+  background: linear-gradient(20deg, #4da7ff, darkorange);
   border-color: transparent;
   color: white;
 }
@@ -4892,12 +4908,12 @@ a.btn[href="#previous"]:hover,
 .btn.btn-gradient-primary:not(:disabled):not(.disabled):hover,
 .btn.btn-gradient-primary:not(:disabled):not(.disabled):focus,
 .btn.btn-gradient-primary:not(:disabled):not(.disabled):active {
-  background: linear-gradient(20deg, #0081ff, #0067cc);
+  background: linear-gradient(20deg, orangered, darkorange);
   border-color: transparent;
 }
 
 .btn.btn-gradient-primary:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 129, 255, 0.5);
+  box-shadow: 0 0 0 0.15rem rgba(0, 129, 255, 0.5);
 }
 
 .btn.btn-gradient-primary.btn-pulse:not(:disabled):not(.disabled) {
@@ -4910,7 +4926,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-light-primary {
-  background: rgba(0, 129, 255, 0.3);
+  background: orangered;
   border-color: transparent;
   color: #0053a3;
 }
@@ -4923,7 +4939,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-light-primary:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 129, 255, 0.2);
+  box-shadow: 0 0 0 0.15rem rgba(0, 129, 255, 0.2);
 }
 
 .btn.btn-light-primary.btn-pulse:not(:disabled):not(.disabled) {
@@ -4937,26 +4953,26 @@ a.btn[href="#previous"]:hover,
 
 .btn.btn-outline-primary {
   background: none;
-  border-color: #0081ff;
-  color: #0074e6;
+  border-color: orangered;
+  color: orangered;
   border-width: 1px;
 }
 
 .btn.btn-outline-primary:not(:disabled):not(.disabled):hover {
-  background: #0081ff;
-  border-color: #0081ff;
+  background: orangered;
+  border-color: orangered;
   color: white;
 }
 
 .btn.btn-outline-primary:not(:disabled):not(.disabled):focus,
 .btn.btn-outline-primary:not(:disabled):not(.disabled):active {
-  background: #0062c2;
-  border-color: #0062c2;
+  background: orangered;
+  border-color: orangered;
   color: white;
 }
 
 .btn.btn-outline-primary:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 129, 255, 0.4);
+  box-shadow: 0 0 0 0.15rem orange;
 }
 
 .btn.btn-outline-primary.btn-pulse:not(:disabled):not(.disabled) {
@@ -4969,8 +4985,8 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-secondary {
-  background: #aa66cc;
-  border-color: #aa66cc;
+  background: orangered;
+  border-color: orangered;
 }
 
 .btn.btn-secondary:not(:disabled):not(.disabled):hover,
@@ -4981,7 +4997,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-secondary:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(170, 102, 204, 0.4) !important;
+  box-shadow: 0 0 0 0.15rem rgba(170, 102, 204, 0.4) !important;
 }
 
 .btn.btn-secondary.btn-pulse:not(:disabled):not(.disabled) {
@@ -5002,12 +5018,12 @@ a.btn[href="#previous"]:hover,
 .btn.btn-gradient-secondary:not(:disabled):not(.disabled):hover,
 .btn.btn-gradient-secondary:not(:disabled):not(.disabled):focus,
 .btn.btn-gradient-secondary:not(:disabled):not(.disabled):active {
-  background: linear-gradient(20deg, #aa66cc, #9540bf);
+  background: linear-gradient(20deg, orangered, #9540bf);
   border-color: transparent;
 }
 
 .btn.btn-gradient-secondary:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(170, 102, 204, 0.5);
+  box-shadow: 0 0 0 0.15rem rgba(170, 102, 204, 0.5);
 }
 
 .btn.btn-gradient-secondary.btn-pulse:not(:disabled):not(.disabled) {
@@ -5033,7 +5049,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-light-secondary:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(170, 102, 204, 0.2);
+  box-shadow: 0 0 0 0.15rem rgba(170, 102, 204, 0.2);
 }
 
 .btn.btn-light-secondary.btn-pulse:not(:disabled):not(.disabled) {
@@ -5047,14 +5063,14 @@ a.btn[href="#previous"]:hover,
 
 .btn.btn-outline-secondary {
   background: none;
-  border-color: #aa66cc;
+  border-color: orangered;
   color: #9f53c6;
   border-width: 1px;
 }
 
 .btn.btn-outline-secondary:not(:disabled):not(.disabled):hover {
-  background: #aa66cc;
-  border-color: #aa66cc;
+  background: orangered;
+  border-color: orangered;
   color: white;
 }
 
@@ -5066,7 +5082,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-outline-secondary:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(170, 102, 204, 0.4);
+  box-shadow: 0 0 0 0.15rem rgba(170, 102, 204, 0.4);
 }
 
 .btn.btn-outline-secondary.btn-pulse:not(:disabled):not(.disabled) {
@@ -5091,7 +5107,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-success:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(40, 199, 111, 0.4) !important;
+  box-shadow: 0 0 0 0.15rem rgba(40, 199, 111, 0.4) !important;
 }
 
 .btn.btn-success.btn-pulse:not(:disabled):not(.disabled) {
@@ -5117,7 +5133,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-gradient-success:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(40, 199, 111, 0.5);
+  box-shadow: 0 0 0 0.15rem rgba(40, 199, 111, 0.5);
 }
 
 .btn.btn-gradient-success.btn-pulse:not(:disabled):not(.disabled) {
@@ -5143,7 +5159,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-light-success:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(40, 199, 111, 0.2);
+  box-shadow: 0 0 0 0.15rem rgba(40, 199, 111, 0.2);
 }
 
 .btn.btn-light-success.btn-pulse:not(:disabled):not(.disabled) {
@@ -5176,7 +5192,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-outline-success:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(40, 199, 111, 0.4);
+  box-shadow: 0 0 0 0.15rem rgba(40, 199, 111, 0.4);
 }
 
 .btn.btn-outline-success.btn-pulse:not(:disabled):not(.disabled) {
@@ -5201,7 +5217,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-danger:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(234, 84, 85, 0.4) !important;
+  box-shadow: 0 0 0 0.15rem rgba(234, 84, 85, 0.4) !important;
 }
 
 .btn.btn-danger.btn-pulse:not(:disabled):not(.disabled) {
@@ -5227,7 +5243,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-gradient-danger:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(234, 84, 85, 0.5);
+  box-shadow: 0 0 0 0.15rem rgba(234, 84, 85, 0.5);
 }
 
 .btn.btn-gradient-danger.btn-pulse:not(:disabled):not(.disabled) {
@@ -5253,7 +5269,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-light-danger:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(234, 84, 85, 0.2);
+  box-shadow: 0 0 0 0.15rem rgba(234, 84, 85, 0.2);
 }
 
 .btn.btn-light-danger.btn-pulse:not(:disabled):not(.disabled) {
@@ -5286,7 +5302,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-outline-danger:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(234, 84, 85, 0.4);
+  box-shadow: 0 0 0 0.15rem rgba(234, 84, 85, 0.4);
 }
 
 .btn.btn-outline-danger.btn-pulse:not(:disabled):not(.disabled) {
@@ -5311,7 +5327,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-warning:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(255, 159, 67, 0.4) !important;
+  box-shadow: 0 0 0 0.15rem rgba(255, 159, 67, 0.4) !important;
 }
 
 .btn.btn-warning.btn-pulse:not(:disabled):not(.disabled) {
@@ -5338,7 +5354,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-gradient-warning:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(255, 159, 67, 0.5);
+  box-shadow: 0 0 0 0.15rem rgba(255, 159, 67, 0.5);
 }
 
 .btn.btn-gradient-warning.btn-pulse:not(:disabled):not(.disabled) {
@@ -5364,7 +5380,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-light-warning:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(255, 159, 67, 0.2);
+  box-shadow: 0 0 0 0.15rem rgba(255, 159, 67, 0.2);
 }
 
 .btn.btn-light-warning.btn-pulse:not(:disabled):not(.disabled) {
@@ -5397,7 +5413,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-outline-warning:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(255, 159, 67, 0.4);
+  box-shadow: 0 0 0 0.15rem rgba(255, 159, 67, 0.4);
 }
 
 .btn.btn-outline-warning.btn-pulse:not(:disabled):not(.disabled) {
@@ -5428,7 +5444,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-info:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(51, 181, 229, 0.4) !important;
+  box-shadow: 0 0 0 0.15rem rgba(51, 181, 229, 0.4) !important;
 }
 
 .btn.btn-info.btn-pulse:not(:disabled):not(.disabled) {
@@ -5454,7 +5470,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-gradient-info:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(51, 181, 229, 0.5);
+  box-shadow: 0 0 0 0.15rem rgba(51, 181, 229, 0.5);
 }
 
 .btn.btn-gradient-info.btn-pulse:not(:disabled):not(.disabled) {
@@ -5480,7 +5496,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-light-info:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(51, 181, 229, 0.2);
+  box-shadow: 0 0 0 0.15rem rgba(51, 181, 229, 0.2);
 }
 
 .btn.btn-light-info.btn-pulse:not(:disabled):not(.disabled) {
@@ -5513,7 +5529,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-outline-info:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(51, 181, 229, 0.4);
+  box-shadow: 0 0 0 0.15rem rgba(51, 181, 229, 0.4);
 }
 
 .btn.btn-outline-info.btn-pulse:not(:disabled):not(.disabled) {
@@ -5543,7 +5559,7 @@ a.btn[href="#previous"]:hover,
 
 .btn.btn-light:not(:disabled):not(.disabled):focus,
 .fc .btn.fc-state-default:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(175, 184, 189, 0.4) !important;
+  box-shadow: 0 0 0 0.15rem rgba(175, 184, 189, 0.4) !important;
 }
 
 .btn.btn-light.btn-pulse:not(:disabled):not(.disabled),
@@ -5572,7 +5588,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-gradient-light:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(175, 184, 189, 0.5);
+  box-shadow: 0 0 0 0.15rem rgba(175, 184, 189, 0.5);
 }
 
 .btn.btn-gradient-light.btn-pulse:not(:disabled):not(.disabled) {
@@ -5606,7 +5622,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-outline-light:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(175, 184, 189, 0.4);
+  box-shadow: 0 0 0 0.15rem rgba(175, 184, 189, 0.4);
 }
 
 .btn.btn-outline-light.btn-pulse:not(:disabled):not(.disabled) {
@@ -5637,7 +5653,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-dark:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(41, 49, 52, 0.4) !important;
+  box-shadow: 0 0 0 0.15rem rgba(41, 49, 52, 0.4) !important;
 }
 
 .btn.btn-dark.btn-pulse:not(:disabled):not(.disabled) {
@@ -5663,7 +5679,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-gradient-dark:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(41, 49, 52, 0.5);
+  box-shadow: 0 0 0 0.15rem rgba(41, 49, 52, 0.5);
 }
 
 .btn.btn-gradient-dark.btn-pulse:not(:disabled):not(.disabled) {
@@ -5689,7 +5705,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-light-dark:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(41, 49, 52, 0.2);
+  box-shadow: 0 0 0 0.15rem rgba(41, 49, 52, 0.2);
 }
 
 .btn.btn-light-dark.btn-pulse:not(:disabled):not(.disabled) {
@@ -5722,7 +5738,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-outline-dark:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(41, 49, 52, 0.4);
+  box-shadow: 0 0 0 0.15rem rgba(41, 49, 52, 0.4);
 }
 
 .btn.btn-outline-dark.btn-pulse:not(:disabled):not(.disabled) {
@@ -5748,7 +5764,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-facebook:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(59, 89, 152, 0.4) !important;
+  box-shadow: 0 0 0 0.15rem rgba(59, 89, 152, 0.4) !important;
 }
 
 .btn.btn-facebook.btn-pulse:not(:disabled):not(.disabled) {
@@ -5781,7 +5797,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-outline-facebook:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(59, 89, 152, 0.4);
+  box-shadow: 0 0 0 0.15rem rgba(59, 89, 152, 0.4);
 }
 
 .btn.btn-outline-facebook.btn-pulse:not(:disabled):not(.disabled) {
@@ -5807,7 +5823,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-google:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(219, 68, 55, 0.4) !important;
+  box-shadow: 0 0 0 0.15rem rgba(219, 68, 55, 0.4) !important;
 }
 
 .btn.btn-google.btn-pulse:not(:disabled):not(.disabled) {
@@ -5840,7 +5856,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-outline-google:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(219, 68, 55, 0.4);
+  box-shadow: 0 0 0 0.15rem rgba(219, 68, 55, 0.4);
 }
 
 .btn.btn-outline-google.btn-pulse:not(:disabled):not(.disabled) {
@@ -5866,7 +5882,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-twitter:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(85, 172, 238, 0.4) !important;
+  box-shadow: 0 0 0 0.15rem rgba(85, 172, 238, 0.4) !important;
 }
 
 .btn.btn-twitter.btn-pulse:not(:disabled):not(.disabled) {
@@ -5899,7 +5915,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-outline-twitter:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(85, 172, 238, 0.4);
+  box-shadow: 0 0 0 0.15rem rgba(85, 172, 238, 0.4);
 }
 
 .btn.btn-outline-twitter.btn-pulse:not(:disabled):not(.disabled) {
@@ -5925,7 +5941,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-linkedin:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 119, 181, 0.4) !important;
+  box-shadow: 0 0 0 0.15rem rgba(0, 119, 181, 0.4) !important;
 }
 
 .btn.btn-linkedin.btn-pulse:not(:disabled):not(.disabled) {
@@ -5958,7 +5974,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-outline-linkedin:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 119, 181, 0.4);
+  box-shadow: 0 0 0 0.15rem rgba(0, 119, 181, 0.4);
 }
 
 .btn.btn-outline-linkedin.btn-pulse:not(:disabled):not(.disabled) {
@@ -5984,7 +6000,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-whatsapp:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(67, 216, 84, 0.4) !important;
+  box-shadow: 0 0 0 0.15rem rgba(67, 216, 84, 0.4) !important;
 }
 
 .btn.btn-whatsapp.btn-pulse:not(:disabled):not(.disabled) {
@@ -6017,7 +6033,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-outline-whatsapp:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(67, 216, 84, 0.4);
+  box-shadow: 0 0 0 0.15rem rgba(67, 216, 84, 0.4);
 }
 
 .btn.btn-outline-whatsapp.btn-pulse:not(:disabled):not(.disabled) {
@@ -6043,7 +6059,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-instagram:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(63, 114, 155, 0.4) !important;
+  box-shadow: 0 0 0 0.15rem rgba(63, 114, 155, 0.4) !important;
 }
 
 .btn.btn-instagram.btn-pulse:not(:disabled):not(.disabled) {
@@ -6076,7 +6092,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-outline-instagram:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(63, 114, 155, 0.4);
+  box-shadow: 0 0 0 0.15rem rgba(63, 114, 155, 0.4);
 }
 
 .btn.btn-outline-instagram.btn-pulse:not(:disabled):not(.disabled) {
@@ -6102,7 +6118,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-dribbble:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(234, 76, 137, 0.4) !important;
+  box-shadow: 0 0 0 0.15rem rgba(234, 76, 137, 0.4) !important;
 }
 
 .btn.btn-dribbble.btn-pulse:not(:disabled):not(.disabled) {
@@ -6135,7 +6151,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-outline-dribbble:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(234, 76, 137, 0.4);
+  box-shadow: 0 0 0 0.15rem rgba(234, 76, 137, 0.4);
 }
 
 .btn.btn-outline-dribbble.btn-pulse:not(:disabled):not(.disabled) {
@@ -6161,7 +6177,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-youtube:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(205, 32, 31, 0.4) !important;
+  box-shadow: 0 0 0 0.15rem rgba(205, 32, 31, 0.4) !important;
 }
 
 .btn.btn-youtube.btn-pulse:not(:disabled):not(.disabled) {
@@ -6194,7 +6210,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-outline-youtube:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(205, 32, 31, 0.4);
+  box-shadow: 0 0 0 0.15rem rgba(205, 32, 31, 0.4);
 }
 
 .btn.btn-outline-youtube.btn-pulse:not(:disabled):not(.disabled) {
@@ -6220,7 +6236,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-github:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 64, 93, 0.4) !important;
+  box-shadow: 0 0 0 0.15rem rgba(0, 64, 93, 0.4) !important;
 }
 
 .btn.btn-github.btn-pulse:not(:disabled):not(.disabled) {
@@ -6253,7 +6269,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-outline-github:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 64, 93, 0.4);
+  box-shadow: 0 0 0 0.15rem rgba(0, 64, 93, 0.4);
 }
 
 .btn.btn-outline-github.btn-pulse:not(:disabled):not(.disabled) {
@@ -6279,7 +6295,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-behance:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(23, 105, 255, 0.4) !important;
+  box-shadow: 0 0 0 0.15rem rgba(23, 105, 255, 0.4) !important;
 }
 
 .btn.btn-behance.btn-pulse:not(:disabled):not(.disabled) {
@@ -6312,7 +6328,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-outline-behance:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(23, 105, 255, 0.4);
+  box-shadow: 0 0 0 0.15rem rgba(23, 105, 255, 0.4);
 }
 
 .btn.btn-outline-behance.btn-pulse:not(:disabled):not(.disabled) {
@@ -6338,7 +6354,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-skype:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 175, 240, 0.4) !important;
+  box-shadow: 0 0 0 0.15rem rgba(0, 175, 240, 0.4) !important;
 }
 
 .btn.btn-skype.btn-pulse:not(:disabled):not(.disabled) {
@@ -6371,7 +6387,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-outline-skype:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 175, 240, 0.4);
+  box-shadow: 0 0 0 0.15rem rgba(0, 175, 240, 0.4);
 }
 
 .btn.btn-outline-skype.btn-pulse:not(:disabled):not(.disabled) {
@@ -6397,7 +6413,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-yahoo:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(65, 0, 147, 0.4) !important;
+  box-shadow: 0 0 0 0.15rem rgba(65, 0, 147, 0.4) !important;
 }
 
 .btn.btn-yahoo.btn-pulse:not(:disabled):not(.disabled) {
@@ -6430,7 +6446,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .btn.btn-outline-yahoo:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(65, 0, 147, 0.4);
+  box-shadow: 0 0 0 0.15rem rgba(65, 0, 147, 0.4);
 }
 
 .btn.btn-outline-yahoo.btn-pulse:not(:disabled):not(.disabled) {
@@ -6519,7 +6535,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .progress .progress-bar:not(.progress-bar-striped) {
-  background: #0081ff;
+  background: orangered;
 }
 
 .dropdown {
@@ -6577,7 +6593,7 @@ a.btn[href="#previous"]:hover,
 }
 
 .dropdown-menu .dropdown-menu-title {
-  background-color: #0081ff;
+  background-color: orangered;
   padding: 15px 20px;
   color: white;
   background-size: cover !important;
@@ -6604,7 +6620,7 @@ a.btn[href="#previous"]:hover,
 .dropdown-menu .dropdown-item:active {
   background: #f5f5f5;
   text-decoration: none;
-  color: #0081ff;
+  color: orangered;
 }
 
 table .dropdown {
@@ -6625,7 +6641,7 @@ table .dropdown {
 }
 
 .badge.badge-secondary {
-  background: #aa66cc;
+  background: orangered;
 }
 
 .badge.badge-info {
@@ -6641,7 +6657,7 @@ table .dropdown {
 }
 
 .badge.badge-primary {
-  background: #0081ff;
+  background: orangered;
 }
 
 .badge.badge-light {
@@ -6734,7 +6750,7 @@ table .dropdown {
 .accordion.custom-accordion .accordion-row a.accordion-header:focus,
 .accordion.custom-accordion .accordion-row .header form .input-group .input-group-append button.accordion-header.btn:focus,
 .header form .input-group .input-group-append .accordion.custom-accordion .accordion-row button.accordion-header.btn:focus {
-  color: #0081ff;
+  color: orangered;
 }
 
 .accordion.custom-accordion .accordion-row .accordion-body {
@@ -6776,13 +6792,13 @@ table .dropdown {
 .accordion.custom-accordion.accordion-primary .accordion-row:not(.open) a.accordion-header:focus,
 .accordion.custom-accordion.accordion-primary .accordion-row:not(.open) .header form .input-group .input-group-append button.accordion-header.btn:focus,
 .header form .input-group .input-group-append .accordion.custom-accordion.accordion-primary .accordion-row:not(.open) button.accordion-header.btn:focus {
-  color: #0081ff;
+  color: orangered;
 }
 
 .accordion.custom-accordion.accordion-primary .accordion-row.open a.accordion-header,
 .accordion.custom-accordion.accordion-primary .accordion-row.open .header form .input-group .input-group-append button.accordion-header.btn,
 .header form .input-group .input-group-append .accordion.custom-accordion.accordion-primary .accordion-row.open button.accordion-header.btn {
-  background: #0081ff;
+  background: orangered;
   color: white;
 }
 
@@ -6824,13 +6840,13 @@ table .dropdown {
 .accordion.custom-accordion.accordion-secondary .accordion-row:not(.open) a.accordion-header:focus,
 .accordion.custom-accordion.accordion-secondary .accordion-row:not(.open) .header form .input-group .input-group-append button.accordion-header.btn:focus,
 .header form .input-group .input-group-append .accordion.custom-accordion.accordion-secondary .accordion-row:not(.open) button.accordion-header.btn:focus {
-  color: #aa66cc;
+  color: orangered;
 }
 
 .accordion.custom-accordion.accordion-secondary .accordion-row.open a.accordion-header,
 .accordion.custom-accordion.accordion-secondary .accordion-row.open .header form .input-group .input-group-append button.accordion-header.btn,
 .header form .input-group .input-group-append .accordion.custom-accordion.accordion-secondary .accordion-row.open button.accordion-header.btn {
-  background: #aa66cc;
+  background: orangered;
   color: white;
 }
 
@@ -6939,15 +6955,15 @@ body:not(.dark) .nicescroll-cursors {
 }
 
 .daterangepicker td.active {
-  background: #0081ff;
+  background: orangered;
 }
 
 .daterangepicker td.active:hover {
-  background: #0081ff;
+  background: orangered;
 }
 
 .daterangepicker .ranges li.active {
-  background: #0081ff;
+  background: orangered;
 }
 
 .alert {
@@ -6973,11 +6989,11 @@ body:not(.dark) .nicescroll-cursors {
 }
 
 .alert.alert-primary {
-  background: rgba(0, 129, 255, 0.3) !important;
+  background: orangered !important;
 }
 
 .alert.alert-primary.alert-with-border {
-  border-left: 3px solid #0081ff !important;
+  border-left: 3px solid orangered !important;
 }
 
 .alert.alert-secondary {
@@ -6985,7 +7001,7 @@ body:not(.dark) .nicescroll-cursors {
 }
 
 .alert.alert-secondary.alert-with-border {
-  border-left: 3px solid #aa66cc !important;
+  border-left: 3px solid orangered !important;
 }
 
 .alert.alert-success {
@@ -7049,7 +7065,7 @@ body:not(.dark) .nicescroll-cursors {
 }
 
 .breadcrumb .breadcrumb-item.active {
-  color: #0081ff;
+  color: orangered;
 }
 
 .notify .alert {
@@ -7068,7 +7084,7 @@ body:not(.dark) .nicescroll-cursors {
 }
 
 .pagination .page-item.active .page-link {
-  background: #0081ff;
+  background: orangered;
   border-color: transparent;
 }
 
@@ -7163,7 +7179,7 @@ body:not(.dark) .nicescroll-cursors {
 }
 
 .swal-modal .swal-button.swal-button--confirm {
-  background: #0081ff;
+  background: orangered;
 }
 
 .swal-modal .swal-button.swal-button--danger {
@@ -7185,21 +7201,21 @@ body:not(.dark) .nicescroll-cursors {
 .irs .irs-single,
 .irs .irs-to,
 .irs .irs-from {
-  background: #0081ff;
+  background: orangered;
 }
 
 .irs .irs-single:before,
 .irs .irs-to:before,
 .irs .irs-from:before {
-  border-top-color: #0081ff;
+  border-top-color: orangered;
 }
 
 .irs .irs-handle {
-  border-color: #0081ff;
+  border-color: orangered;
 }
 
 .irs .irs-bar {
-  background: #0081ff;
+  background: orangered;
 }
 
 .select2 {
@@ -7237,7 +7253,7 @@ body:not(.dark) .nicescroll-cursors {
 }
 
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
-  background-color: #0081ff;
+  background-color: orangered;
   color: white;
 }
 
@@ -7343,7 +7359,7 @@ body.modal-open .modal.show .modal-dialog {
 }
 
 .wickedpicker .wickedpicker__controls__control .hover-state {
-  color: #0081ff;
+  color: orangered;
 }
 
 .wickedpicker .wickedpicker__title {
@@ -7402,7 +7418,7 @@ body.modal-open .modal.show .modal-dialog {
   display: block;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
-  color: #0081ff;
+  color: orangered;
 }
 
 .avatar > a:hover,
@@ -7518,7 +7534,7 @@ body.modal-open .modal.show .modal-dialog {
 }
 
 .avatar.avatar-state-primary:before {
-  background: #0081ff;
+  background: orangered;
 }
 
 .avatar.avatar-state-success:before {
@@ -7538,7 +7554,7 @@ body.modal-open .modal.show .modal-dialog {
 }
 
 .avatar.avatar-state-secondary:before {
-  background: #aa66cc;
+  background: orangered;
 }
 
 .avatar.avatar-state-light:before {
@@ -7570,7 +7586,7 @@ body.modal-open .modal.show .modal-dialog {
 
 .dropzone {
   border-width: 1px;
-  border-color: #0081ff;
+  border-color: orangered;
 }
 
 body.form-membership {
@@ -7697,7 +7713,7 @@ body.form-membership .form-wrapper hr {
 
 .chat-block .chat-sidebar .chat-sidebar-content .list-group .list-group-item.active {
   color: black;
-  border-color: #0081ff;
+  border-color: orangered;
 }
 
 .chat-block .chat-content {
@@ -7787,12 +7803,12 @@ body.form-membership .form-wrapper hr {
 .chat-block .chat-content .messages .message-item.me:not(.message-item-divider):before {
   left: auto;
   right: -10px;
-  border-left-color: #0081ff;
+  border-left-color: orangered;
   border-right-color: transparent;
 }
 
 .chat-block .chat-content .messages .message-item.me .message-item-content {
-  background-color: #0081ff;
+  background-color: orangered;
   color: rgba(255, 255, 255, 0.9);
 }
 
@@ -7925,7 +7941,7 @@ body.form-membership .form-wrapper hr {
 }
 
 .fc .fc-event {
-  background: #0081ff;
+  background: orangered;
   color: white !important;
   border: none;
   border-radius: 0;
@@ -7988,7 +8004,7 @@ body.form-membership .form-wrapper hr {
 }
 
 .fc .fc-list-table .fc-list-item.bg-primary:hover td {
-  background: #0081ff !important;
+  background: orangered !important;
 }
 
 .fc .fc-list-table .fc-list-item.bg-primary .fc-event-dot {
@@ -7996,7 +8012,7 @@ body.form-membership .form-wrapper hr {
 }
 
 .fc .fc-list-table .fc-list-item.bg-secondary:hover td {
-  background: #aa66cc !important;
+  background: orangered !important;
 }
 
 .fc .fc-list-table .fc-list-item.bg-secondary .fc-event-dot {
@@ -8019,7 +8035,7 @@ body.form-membership .form-wrapper hr {
 }
 
 .fc .fc-state-default.fc-state-active {
-  background: #0081ff;
+  background: orangered;
   color: white;
 }
 
@@ -8033,23 +8049,23 @@ body.form-membership .form-wrapper hr {
 }
 
 .list-group .list-group-item.list-group-item-primary {
-  background: #0081ff !important;
+  background: orangered !important;
   color: white !important;
 }
 
 .list-group .list-group-item.list-group-item-primary-bright {
-  background: rgba(0, 129, 255, 0.3) !important;
-  color: #0081ff !important;
+  background: orangered !important;
+  color: orangered !important;
 }
 
 .list-group .list-group-item.list-group-item-secondary {
-  background: #aa66cc !important;
+  background: orangered !important;
   color: white !important;
 }
 
 .list-group .list-group-item.list-group-item-secondary-bright {
   background: rgba(170, 102, 204, 0.3) !important;
-  color: #aa66cc !important;
+  color: orangered !important;
 }
 
 .list-group .list-group-item.list-group-item-success {
@@ -8108,9 +8124,11 @@ body.form-membership .form-wrapper hr {
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  background-color: #0081ff;
+  background-color: orangered;
 }
-
+body.dark .cds {
+  color: white;
+}
 .toast-title {
   font-weight: bold;
 }
@@ -8342,7 +8360,7 @@ button.toast-close-button {
 }
 
 .dd-handle:hover {
-  color: #0081ff;
+  color: orangered;
 }
 
 .dd3-content {
@@ -8412,8 +8430,8 @@ button.toast-close-button {
 }
 
 .stretch-layout.hidden-navigation .layout-wrapper .content-wrapper .content-body .content {
-  padding-right: 30px !important;
-  padding-left: 30px !important;
+  padding-right: 10px !important;
+  padding-left: 10px !important;
 }
 
 .stretch-layout.horizontal-navigation .app-block {
@@ -8445,7 +8463,7 @@ button.toast-close-button {
 
 .app-block .app-sidebar .app-sidebar-menu .list-group .list-group-item.active {
   background: none;
-  color: #0081ff;
+  color: orangered;
 }
 
 .app-block .app-sidebar-menu-button {
@@ -8671,7 +8689,7 @@ body:not(.stretch-layout) .app-block .app-content .app-content-body {
   }
 
   .theme-switcher .theme-switcher-button {
-    background-color: #0081ff;
+    background-color: orangered;
     color: white;
     padding: 15px 20px;
     border-top-left-radius: 5px;
@@ -8700,7 +8718,7 @@ body:not(.stretch-layout) .app-block .app-content .app-content-body {
   .theme-switcher .theme-switcher-panel .app-block .app-content .app-action,
   .app-block .app-content .theme-switcher .theme-switcher-panel .app-action {
     margin-bottom: 0;
-    border: 1px solid #0081ff;
+    border: 1px solid orangered;
     border-right: none;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
@@ -8777,7 +8795,7 @@ body:not(.stretch-layout) .app-block .app-content .app-content-body {
   body.small-navigation:not(.hidden-navigation):not(.horizontal-navigation) .navigation .navigation-menu-body > ul > li > a,
   body.small-navigation:not(.hidden-navigation):not(.horizontal-navigation) .navigation .header form .input-group .input-group-append .navigation-menu-body > ul > li > button.btn,
   .header form .input-group .input-group-append body.small-navigation:not(.hidden-navigation):not(.horizontal-navigation) .navigation .navigation-menu-body > ul > li > button.btn {
-    padding: 12px 0;
+    padding: 0;
   }
 
   body.small-navigation:not(.hidden-navigation):not(.horizontal-navigation) .navigation .navigation-menu-body ul li {
@@ -8787,7 +8805,7 @@ body:not(.stretch-layout) .app-block .app-content .app-content-body {
   body.small-navigation:not(.hidden-navigation):not(.horizontal-navigation) .navigation .navigation-menu-body ul li:hover > a .nav-link-icon,
   body.small-navigation:not(.hidden-navigation):not(.horizontal-navigation) .navigation .navigation-menu-body ul .header form .input-group .input-group-append li:hover > button.btn .nav-link-icon,
   .header form .input-group .input-group-append body.small-navigation:not(.hidden-navigation):not(.horizontal-navigation) .navigation .navigation-menu-body ul li:hover > button.btn .nav-link-icon {
-    stroke: #0081ff;
+    stroke: orangered;
   }
 
   body.small-navigation:not(.hidden-navigation):not(.horizontal-navigation) .navigation .navigation-menu-body ul li.open > a,
@@ -8824,7 +8842,7 @@ body:not(.stretch-layout) .app-block .app-content .app-content-body {
   body.small-navigation:not(.hidden-navigation):not(.horizontal-navigation) .navigation .navigation-menu-body ul .header form .input-group .input-group-append li.open > button.btn + ul li.open > button.btn,
   .header form .input-group .input-group-append body.small-navigation:not(.hidden-navigation):not(.horizontal-navigation) .navigation .navigation-menu-body ul li.open > button.btn + ul li.open > button.btn {
     background: none;
-    color: #0081ff;
+    color: orangered;
   }
 
   body.small-navigation:not(.hidden-navigation):not(.horizontal-navigation) .navigation .navigation-menu-body ul li.open > ul {
@@ -8879,7 +8897,7 @@ body:not(.stretch-layout) .app-block .app-content .app-content-body {
   body.small-navigation:not(.hidden-navigation):not(.horizontal-navigation) .navigation .header form .input-group .input-group-append .navigation-menu-body > ul > li > button.active.btn,
   .header form .input-group .input-group-append body.small-navigation:not(.hidden-navigation):not(.horizontal-navigation) .navigation .navigation-menu-body > ul > li > button.active.btn {
     border-radius: 5px;
-    background-color: #0081ff;
+    background-color: orangered;
     position: static;
   }
 
@@ -8890,7 +8908,7 @@ body:not(.stretch-layout) .app-block .app-content .app-content-body {
   }
 
   body.small-navigation:not(.hidden-navigation):not(.horizontal-navigation) .navigation:hover {
-    width: 320px;
+    width: 70px;
   }
 
   body.small-navigation:not(.hidden-navigation):not(.horizontal-navigation) .navigation:hover .navigation-menu-tab {
@@ -8900,7 +8918,7 @@ body:not(.stretch-layout) .app-block .app-content .app-content-body {
   body.small-navigation:not(.hidden-navigation):not(.horizontal-navigation) .navigation:hover .navigation-menu-body {
     display: -webkit-box;
     display: flex;
-    height: calc(100vh - 75px);
+    height: calc(75px);
   }
 
   body.small-navigation:not(.hidden-navigation):not(.horizontal-navigation) .navigation:hover ul li a,
@@ -8949,6 +8967,8 @@ body:not(.stretch-layout) .app-block .app-content .app-content-body {
     opacity: 0;
     -webkit-transition: left 0.3s;
     transition: left 0.3s;
+    background-color: orangered;
+    color: white;
     position: fixed !important;
   }
 
@@ -8970,7 +8990,7 @@ body:not(.stretch-layout) .app-block .app-content .app-content-body {
   }
 
   body.hidden-navigation:not(.small-navigation) .layout-wrapper .content-wrapper .content-body .content {
-    padding-left: 30px;
+    padding-left: 10px;
   }
 
   body.hidden-navigation:not(.small-navigation) .content-footer {
@@ -9083,7 +9103,7 @@ body:not(.stretch-layout) .app-block .app-content .app-content-body {
   body.horizontal-navigation .horizontal-navigation > ul > li:hover > a,
   body.horizontal-navigation .header form .input-group .input-group-append .horizontal-navigation > ul > li:hover > button.btn,
   .header form .input-group .input-group-append body.horizontal-navigation .horizontal-navigation > ul > li:hover > button.btn {
-    color: #0081ff !important;
+    color: orangered !important;
   }
 
   body.horizontal-navigation .horizontal-navigation ul {
@@ -9116,7 +9136,7 @@ body:not(.stretch-layout) .app-block .app-content .app-content-body {
   body.horizontal-navigation .horizontal-navigation ul li.open > a,
   body.horizontal-navigation .horizontal-navigation ul .header form .input-group .input-group-append li.open > button.btn,
   .header form .input-group .input-group-append body.horizontal-navigation .horizontal-navigation ul li.open > button.btn {
-    color: #0081ff;
+    color: orangered;
   }
 
   body.horizontal-navigation .horizontal-navigation ul li:hover > ul {
@@ -9142,7 +9162,7 @@ body:not(.stretch-layout) .app-block .app-content .app-content-body {
   body.horizontal-navigation .horizontal-navigation ul li ul li:hover > a,
   body.horizontal-navigation .horizontal-navigation ul li ul .header form .input-group .input-group-append li:hover > button.btn,
   .header form .input-group .input-group-append body.horizontal-navigation .horizontal-navigation ul li ul li:hover > button.btn {
-    color: #0081ff;
+    color: orangered;
   }
 
   body.horizontal-navigation .horizontal-navigation ul li ul li a,
@@ -9154,13 +9174,13 @@ body:not(.stretch-layout) .app-block .app-content .app-content-body {
   body.horizontal-navigation .horizontal-navigation ul li ul li a.active,
   body.horizontal-navigation .horizontal-navigation ul li ul li .header form .input-group .input-group-append button.active.btn,
   .header form .input-group .input-group-append body.horizontal-navigation .horizontal-navigation ul li ul li button.active.btn {
-    color: #0081ff;
+    color: orangered;
   }
 
   body.horizontal-navigation .horizontal-navigation ul li ul li.open > a,
   body.horizontal-navigation .horizontal-navigation ul li ul .header form .input-group .input-group-append li.open > button.btn,
   .header form .input-group .input-group-append body.horizontal-navigation .horizontal-navigation ul li ul li.open > button.btn {
-    color: #0081ff;
+    color: orangered;
   }
 
   body.horizontal-navigation .horizontal-navigation ul li ul li ul {
@@ -9224,7 +9244,7 @@ body:not(.stretch-layout) .app-block .app-content .app-content-body {
   body.horizontal-navigation .horizontal-navigation ul li a.active,
   body.horizontal-navigation .horizontal-navigation ul li .header form .input-group .input-group-append button.active.btn,
   .header form .input-group .input-group-append body.horizontal-navigation .horizontal-navigation ul li button.active.btn {
-    color: #0081ff;
+    color: orangered;
   }
 
   body.horizontal-navigation .horizontal-navigation ul li a .badge,
@@ -9268,7 +9288,7 @@ body:not(.stretch-layout) .app-block .app-content .app-content-body {
   body.horizontal-navigation .horizontal-navigation ul li.open > a,
   body.horizontal-navigation .horizontal-navigation ul .header form .input-group .input-group-append li.open > button.btn,
   .header form .input-group .input-group-append body.horizontal-navigation .horizontal-navigation ul li.open > button.btn {
-    color: #0081ff;
+    color: orangered;
   }
 
   body.horizontal-navigation .horizontal-navigation ul li.open > ul {
@@ -9311,7 +9331,7 @@ body.semi-dark:not(.dark) .navigation .navigation-menu-tab ul li .header form .i
 body.semi-dark:not(.dark) .navigation .navigation-menu-tab ul li a:not(.active):focus,
 body.semi-dark:not(.dark) .navigation .navigation-menu-tab ul li .header form .input-group .input-group-append button.btn:not(.active):focus,
 .header form .input-group .input-group-append body.semi-dark:not(.dark) .navigation .navigation-menu-tab ul li button.btn:not(.active):focus {
-  color: #0081ff;
+  color: orangered;
 }
 
 body.semi-dark:not(.dark) .navigation .navigation-menu-body .avatar {
@@ -9360,7 +9380,7 @@ body.semi-dark:not(.dark) .navigation .navigation-menu-body ul li .header form .
 body.semi-dark:not(.dark) .navigation .navigation-menu-body ul li a.active:after,
 body.semi-dark:not(.dark) .navigation .navigation-menu-body ul li .header form .input-group .input-group-append button.active.btn:after,
 .header form .input-group .input-group-append body.semi-dark:not(.dark) .navigation .navigation-menu-body ul li button.active.btn:after {
-  background-color: #0081ff;
+  background-color: orangered;
 }
 
 body.semi-dark:not(.dark) .navigation .navigation-menu-body ul li a:hover,
@@ -9390,7 +9410,7 @@ body.semi-dark:not(.dark) .navigation .navigation-menu-body ul .header form .inp
 }
 
 body.semi-dark:not(.dark) .navigation .navigation-menu-body ul li .dropdown-divider {
-  color: #0081ff;
+  color: orangered;
 }
 
 body.semi-dark:not(.dark) .navigation .navigation-menu-body ul li ul {
@@ -9490,7 +9510,7 @@ body.header-dark:not(.dark) .header form .input-group .input-group-append .heade
 body.header-dark:not(.dark) .header .navigation-toggler a,
 body.header-dark:not(.dark) .header .navigation-toggler form .input-group .input-group-append button.btn,
 body.header-dark:not(.dark) .header form .input-group .input-group-append .navigation-toggler button.btn {
-  color: #c7c7c7;
+  color: white;
 }
 
 body.header-dark:not(.dark) .header .navigation-toggler a:hover,
@@ -9557,8 +9577,8 @@ body.header-dark:not(.dark) .header .dropdown-menu {
 .layout-wrapper .content-wrapper .content-body .content {
   -webkit-box-flex: 1;
           flex: 1;
-  padding: 30px;
-  padding-top: 105px;
+  padding: 20px;
+  padding-top: 80px;
   padding-left: 350px;
   padding-bottom: 0;
 }
@@ -9720,7 +9740,7 @@ small {
 
 .list-group .list-group-item.active {
   z-index: auto;
-  background: #0081ff;
+  background: orangered;
 }
 
 .bring-forward {
@@ -9762,7 +9782,7 @@ small {
 .table-email-list a:focus,
 .table-email-list .header form .input-group .input-group-append button.btn:focus,
 .header form .input-group .input-group-append .table-email-list button.btn:focus {
-  color: #0081ff;
+  color: orangered;
 }
 
 .read-mail-body img {
@@ -9796,7 +9816,7 @@ small {
 }
 
 .list-group .list-group-item.active {
-  background: #0081ff;
+  background: orangered;
   border-color: transparent;
 }
 
@@ -9809,11 +9829,11 @@ small {
 }
 
 .nav-pills .nav-link.active {
-  background: #0081ff;
+  background: orangered;
 }
 
 .nav-tabs .nav-link.active {
-  color: #0081ff;
+  color: orangered;
 }
 
 .text-muted,
@@ -9887,7 +9907,7 @@ small {
 }
 
 .jqvmap-region:hover {
-  fill: #aa66cc;
+  fill: orangered;
 }
 
 .a-0 {
@@ -9977,11 +9997,11 @@ small {
 }
 
 .header {
-  background-color: white;
+  background-color: #ee5722;
   z-index: 999;
   display: -webkit-box;
   display: flex;
-  height: 75px;
+  height: 4rem;
   box-shadow: 0px 5px 10px -10px rgba(0, 0, 0, 0.4);
   position: fixed;
   right: 0;
@@ -9994,7 +10014,7 @@ small {
 }
 
 .header .avatar.avatar-state-success:before {
-  border-color: #0081ff;
+  border-color: orangered;
 }
 
 .header .header-left {
@@ -10022,17 +10042,20 @@ small {
           justify-content: center;
 }
 
-.header .header-left .navigation-toggler a svg,
+.header .header-left .navigation-toggler a i,
 .header .header-left .navigation-toggler form .input-group .input-group-append button.btn svg,
 .header form .input-group .input-group-append .header-left .navigation-toggler button.btn svg {
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
+  font-size: 23px;
+  font-weight: 0;
+  color: white;
 }
 
 .header .header-logo a,
 .header .header-logo form .input-group .input-group-append button.btn,
 .header form .input-group .input-group-append .header-logo button.btn {
-  height: 75px;
+  height: 50px;
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
@@ -10205,7 +10228,7 @@ small {
 }
 
 .navigation {
-  background-color: white;
+  background-color: orangered;
   z-index: 998;
   width: 320px;
   box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.1);
@@ -10258,15 +10281,15 @@ small {
 .navigation .navigation-menu-tab ul li a:hover,
 .navigation .navigation-menu-tab ul li .header form .input-group .input-group-append button.btn:hover,
 .header form .input-group .input-group-append .navigation .navigation-menu-tab ul li button.btn:hover {
-  color: #0081ff;
+  color: orangered;
 }
 
 .navigation .navigation-menu-tab ul li a.active,
 .navigation .navigation-menu-tab ul li .header form .input-group .input-group-append button.active.btn,
 .header form .input-group .input-group-append .navigation .navigation-menu-tab ul li button.active.btn {
   color: white;
-  background-color: #0081ff;
-  box-shadow: 0px 5px 20px -14px #0081ff;
+  background-color: orangered;
+  box-shadow: 0px 5px 20px -14px orangered;
 }
 
 .navigation .navigation-menu-tab ul li a svg,
@@ -10333,20 +10356,20 @@ small {
 .navigation .navigation-menu-body ul li > a:hover,
 .navigation .navigation-menu-body ul .header form .input-group .input-group-append li > button.btn:hover,
 .header form .input-group .input-group-append .navigation .navigation-menu-body ul li > button.btn:hover {
-  color: #0081ff;
+  color: orangered;
 }
 
 .navigation .navigation-menu-body ul li > a:hover .nav-link-icon,
 .navigation .navigation-menu-body ul .header form .input-group .input-group-append li > button.btn:hover .nav-link-icon,
 .header form .input-group .input-group-append .navigation .navigation-menu-body ul li > button.btn:hover .nav-link-icon {
-  stroke: #0081ff;
+  stroke: orangered;
 }
 
 .navigation .navigation-menu-body ul li > a.active,
 .navigation .navigation-menu-body ul .header form .input-group .input-group-append li > button.active.btn,
 .header form .input-group .input-group-append .navigation .navigation-menu-body ul li > button.active.btn {
   position: relative;
-  color: #0081ff;
+  color: orangered;
   font-weight: 600;
   background: rgba(0, 129, 255, 0.15);
   border-radius: 0.5rem;
@@ -10359,7 +10382,7 @@ small {
   content: "";
   display: block;
   border: 6px solid transparent;
-  border-left-color: #0081ff;
+  border-left-color: orangered;
   margin-left: -12px;
   margin-right: 5px;
 }
@@ -10430,14 +10453,14 @@ small {
 .navigation .navigation-menu-body ul li.open > a,
 .navigation .navigation-menu-body ul .header form .input-group .input-group-append li.open > button.btn,
 .header form .input-group .input-group-append .navigation .navigation-menu-body ul li.open > button.btn {
-  color: #0081ff;
+  color: orangered;
   font-weight: 600;
 }
 
 .navigation .navigation-menu-body ul li.open > a .nav-link-icon,
 .navigation .navigation-menu-body ul .header form .input-group .input-group-append li.open > button.btn .nav-link-icon,
 .header form .input-group .input-group-append .navigation .navigation-menu-body ul li.open > button.btn .nav-link-icon {
-  stroke: #0081ff;
+  stroke: orangered;
 }
 
 .navigation .navigation-menu-body ul li.open > ul {
@@ -10716,7 +10739,7 @@ body.dark .navigation .navigation-menu-tab ul li .header form .input-group .inpu
 body.dark .navigation .navigation-menu-tab ul li a:not(.active):focus,
 body.dark .navigation .navigation-menu-tab ul li .header form .input-group .input-group-append button.btn:not(.active):focus,
 .header form .input-group .input-group-append body.dark .navigation .navigation-menu-tab ul li button.btn:not(.active):focus {
-  color: #0081ff;
+  color: orangered;
 }
 
 body.dark .navigation .navigation-menu-body ul li.navigation-divider {
@@ -10768,7 +10791,7 @@ body.dark .navigation .navigation-menu-body ul .header form .input-group .input-
 }
 
 body.dark .navigation .navigation-menu-body ul li .dropdown-divider {
-  color: #0081ff;
+  color: orangered;
 }
 
 body.dark.boxed-layout {
@@ -10881,7 +10904,7 @@ body.dark .swal-modal input.swal-content__input,
 body.dark .form-control:focus,
 body.dark .swal-modal input.swal-content__input:focus,
 .swal-modal body.dark input.swal-content__input:focus {
-  border-color: #0081ff !important;
+  border-color: orangered !important;
 }
 
 body.dark .timeline .timeline-item::before {
@@ -10953,7 +10976,7 @@ body.dark .wizard > .actions .disabled .header form .input-group .input-group-ap
 .header form .input-group .input-group-append body.dark .wizard > .actions .disabled button.btn:not(:disabled):not(.disabled):focus,
 body.dark .wizard > .actions .disabled a:hover:not(:disabled):not(.disabled):focus,
 body.dark .wizard > .actions .disabled a:active:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(4, 7, 26, 0.5);
+  box-shadow: 0 0 0 0.15rem rgba(4, 7, 26, 0.5);
   outline: none;
   color: inherit;
 }
@@ -11261,7 +11284,7 @@ body.dark .daterangepicker td.in-range {
 
 body.dark .daterangepicker td.end-date {
   color: white;
-  background-color: #0081ff;
+  background-color: orangered;
 }
 
 body.dark .daterangepicker .drp-buttons {
@@ -11286,7 +11309,7 @@ body.dark .daterangepicker td.off.in-range {
 
 body.dark .daterangepicker td.available:hover,
 body.dark .daterangepicker th.available:hover {
-  background-color: #0081ff;
+  background-color: orangered;
   color: white;
 }
 
@@ -11495,7 +11518,7 @@ body.dark .fc .fc-state-default:not(:disabled):not(.disabled):active {
 body.dark .btn.btn-light:not(:disabled):not(.disabled):focus,
 .fc body.dark .btn.fc-state-default:not(:disabled):not(.disabled):focus,
 body.dark .fc .fc-state-default:not(:disabled):not(.disabled):focus {
-  box-shadow: 0 0 0 0.2rem rgba(4, 7, 26, 0.5);
+  box-shadow: 0 0 0 0.15rem rgba(4, 7, 26, 0.5);
   outline: none;
   color: inherit;
 }
@@ -11956,7 +11979,7 @@ body.dark.small-navigation .navigation-menu-body ul li.navigation-divider:after 
   }
 
   .layout-wrapper .content-wrapper .content-body .content {
-    padding-left: 30px;
+    padding-left: 20px;
   }
 
   .content-footer {
@@ -11964,7 +11987,7 @@ body.dark.small-navigation .navigation-menu-body ul li.navigation-divider:after 
   }
 
   .navigation {
-    background-color: white;
+    background-color: orangered;
     z-index: 1000;
     box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.15);
     left: -80%;
@@ -11991,7 +12014,7 @@ body.dark.small-navigation .navigation-menu-body ul li.navigation-divider:after 
   }
 
   .navigation .navigation-menu-body {
-    padding: 15px 0;
+    padding: 0;
   }
 
   .page-header {
