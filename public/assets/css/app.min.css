@@ -8126,9 +8126,24 @@ body.form-membership .form-wrapper hr {
 .nav-pills .show > .nav-link {
   background-color: orangered;
 }
+
 body.dark .cds {
   color: white;
 }
+
+.square {
+  border-radius: 4px;
+}
+
+.xpad {
+  padding: 8px 20px!important;
+  font-weight: bold;
+}
+
+.xpad i {
+  margin-right: 8px;
+}
+
 .toast-title {
   font-weight: bold;
 }

@@ -2,19 +2,14 @@
     @section('content')
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <form class="ajax ajax-search" action="/search" method="post">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Name, Publisher or Keywords...">
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
                             </div>
                             <div class="col-md-6">
-                                
-                                <div class="card">
+                                <div class="card square bg-primary">
+                                    <div class="card-body xpad">
+                                        <i class="fa fa-bolt"></i> {{ __('New Apps') }}
+                                    </div>
+                                </div>
+                                <div class="card square">
                                     <div class="card-body">
                                         <div class="d-flex justify-content-end mb-3">
                                             <span class="badge badge-primary">Hacking</span>
