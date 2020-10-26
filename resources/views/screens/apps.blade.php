@@ -1,4 +1,4 @@
-    @extends('screens.base')
+    @extends('templates.base')
     @section('content')
                         <div class="row">
                             <div class="col-md-6">

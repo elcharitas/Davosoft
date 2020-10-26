@@ -1,3 +1,4 @@
+@include('templates.meta')
 <!DOCTYPE html>
 <html lang="en">
     <head>
