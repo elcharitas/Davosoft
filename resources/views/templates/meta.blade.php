@@ -1,5 +1,9 @@
 @extends('templates.sidebar')
 
-@push('meta_header')
+@php
+    $route = Str::of(Route::currentRouteName());
+@endphp
 
+@push('meta_header')
+<meta name="">
 @endpush

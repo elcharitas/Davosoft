@@ -4,7 +4,7 @@
                             <div class="col-md-6">
                             </div>
                             <div class="col-md-6">
-                                <div class="card square bg-primary">
+                                <div class="card square bg-primary m-0">
                                     <div class="card-body xpad">
                                         <i class="fa fa-bolt"></i> {{ __('New Apps') }}
                                     </div>
@@ -14,7 +14,7 @@
                                         <div class="d-flex justify-content-end mb-3">
                                             <span class="badge badge-primary">Hacking</span>
                                         </div>
-                                        <div class="d-lg-flex text-center text-lg-left">
+                                        <div class="text-center">
                                             <a href="#" class="mr-3" title="HP Pavilion 15-EC0005NT AMD">
                                                 <img width="200" src="/assets/media/image/visualstudiocodelogo.png"
                                                      class="img-fluid" alt="HP Pavilion 15-EC0005NT AMD">

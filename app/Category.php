@@ -14,4 +14,12 @@ class Category extends Model
     protected $fillable = [
         'name', 'slug'
     ];
+    
+    /**
+     * Relationship Gets Collection of apps by category
+     */
+    public function apps()
+    {
+        return $this->hasMany(App::class);
+    }
 }

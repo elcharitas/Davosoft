@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title> {{ __('admin.title', ['title' => 'Auth']) }} </title>
+        <title> {{ __('admin.title', ['title' => __('auth.unlock')]) }} </title>
     
         <link rel="shortcut icon" href="/assets/media/image/favicon.png"/>
         
@@ -31,7 +31,7 @@
                 <div class="form-group">
                     <input name="shp_key" type="password" class="form-control" placeholder="Password" required autofocus>
                 </div>
-                <button type="submit" class="btn btn-success btn-block"> Unlock </button>
+                <button type="submit" class="btn btn-success btn-block"> {{ __('auth.unlock') }} </button>
                 <a href="{{ route('adminlogout') }}" class="btn btn-block btn-primary"> Sign Out</a>
                 <hr>
                 @yield('copyright')

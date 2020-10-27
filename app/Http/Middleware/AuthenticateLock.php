@@ -8,7 +8,7 @@ use Cookie;
 class AuthenticateLock
 {
     /**
-     * Number of minutes to lock a session for
+     * Number of minutes before locking? ? ?  : : : a session
      * 
      * @var int
      */
@@ -45,8 +45,10 @@ class AuthenticateLock
     }
     
     /**
-     * While a user is logged in and active, store a cookie to track the session.
-     * If the cookie isnt set, user gets locked out!
+     * While a user is logged in and active, store a session to track the session.
+     * If the session isn't set, user gets locked out!
+     * 
+     * @return void
      */
     public function terminate($reque)
     {

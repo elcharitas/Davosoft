@@ -15,6 +15,15 @@ class CreateAppsTable extends Migration
     {
         Schema::create('apps', function (Blueprint $table) {
             $table->id();
+            $table->string('name')->nullable();
+            $table->string('slug');
+            $table->string('keywords')->nullable();
+            $table->string('publisher')->nullable();
+            $table->int('downloads')->default(0);
+            $table->int('views')->default(0);
+            $table->string('password')->nullable();
+            $table->string('category_id')->nullable();
+            $table->string('media_id')->nullable();
             $table->timestamps();
         });
     }

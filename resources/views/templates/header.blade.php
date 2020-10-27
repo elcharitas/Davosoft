@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>{{ __('app.title', ['title' => $title ?? 'Home']) }}</title>
-        @stack('meta_header')
+@stack('meta_header')
         <link rel="shortcut icon" href="/assets/media/image/favicon.png"/>
 
         <link rel="stylesheet" href="/vendors/bundle.css" type="text/css">
@@ -13,7 +13,8 @@
         <link rel="stylesheet" href="/vendors/range-slider/css/ion.rangeSlider.min.css" type="text/css">
     
         <link rel="stylesheet" href="/assets/css/app.min.css" type="text/css">
-        @stack('styles_header')
+@stack('styles_header')
+    
     </head>
     <body class="small-navigation">
         

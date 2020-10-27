@@ -50,9 +50,9 @@ class App extends Model
      * Performs a download task while updating download count
      * 
      * @param int $id
-     * @return Illuminate\Http\Response|void
+     * @return Illuminate\Http\Response|null
      */
-    public function download($id)
+    public static function download($id)
     {
         $app = static::find($id);
         
@@ -65,17 +65,17 @@ class App extends Model
     }
     
     /**
-     * Gets apps with category slug
+     * Gets apps by category using the category slug
      * 
-     * @param string $category
-     * @return Illuminate\Support\Collection|void
+     * @param string $slug
+     * @return Illuminate\Support\Collection|null
      */
-    public static function category($category)
+    public static function category($slug)
     {
-        $cid = Category::where('slug', $category)->first();
+        $category = Category::where('slug', $slug)->first();
         
-        if($cid){
-            return static::where('category_id', $cid->id)->get();
+        if($category){
+            return $category->apps;
         }
     }
     
@@ -84,7 +84,7 @@ class App extends Model
      * 
      * @param string $category
      * @param string $slug
-     * @return App\App|void
+     * @return App\App|null
      */
     public static function view($category, $slug)
     {

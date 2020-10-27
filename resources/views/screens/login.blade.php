@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title> {{ __('admin.title', ['title' => 'Auth']) }} </title>
+        <title> {{ __('admin.title', ['title' => __('auth.title')]) }} </title>
     
         <link rel="shortcut icon" href="/assets/media/image/favicon.png"/>
         
