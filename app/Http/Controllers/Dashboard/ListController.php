@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers\Dashboard;
 
+use App\Category;
 use App\Http\Controllers\Controller;
-use App\Comment;
 use Illuminate\Http\Request;
 
-class Comment extends Controller
+class ListController extends Controller
 {
     /**
      * Boots up middleware for admin
@@ -21,9 +21,10 @@ class Comment extends Controller
     /**
      * Display a listing of the resource.
      *
+     * @param  \App\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Category $category)
     {
         //
     }
@@ -31,9 +32,10 @@ class Comment extends Controller
     /**
      * Show the form for creating a new resource.
      *
+     * @param  \App\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Category $category)
     {
         //
     }
@@ -42,9 +44,10 @@ class Comment extends Controller
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, Category $category)
     {
         //
     }
@@ -52,10 +55,11 @@ class Comment extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Comment  $comment
+     * @param  \App\Category  $category
+     * @param  \App\App  $app
      * @return \Illuminate\Http\Response
      */
-    public function show(Comment $comment)
+    public function show(Category $category, Data $app)
     {
         //
     }
@@ -63,10 +67,11 @@ class Comment extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Comment  $comment
+     * @param  \App\Category  $category
+     * @param  \App\App  $app
      * @return \Illuminate\Http\Response
      */
-    public function edit(Comment $comment)
+    public function edit(Category $category, Data $app)
     {
         //
     }
@@ -75,10 +80,11 @@ class Comment extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Comment  $comment
+     * @param  \App\Category  $category
+     * @param  \App\App  $app
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Comment $comment)
+    public function update(Request $request, Category $category, Data $app)
     {
         //
     }
@@ -86,10 +92,11 @@ class Comment extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Comment  $comment
+     * @param  \App\Category  $category
+     * @param  \App\App  $app
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Comment $comment)
+    public function destroy(Category $category, Data $app)
     {
         //
     }

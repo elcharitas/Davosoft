@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Validator;
 
-class Auth extends Controller
+class AuthController extends Controller
 {
     /**
      * Boots up authentication middleware
@@ -17,9 +17,9 @@ class Auth extends Controller
     {
         $this->middleware('guest')->except(['destroy', 'locked', 'unlock']);
         
-        $this->middleware('throttle: 60, 1')->only(['login', 'unlock']);
+        $this->middleware('throttle: 30, 1')->only(['login', 'unlock']);
         
-        $this->middleware('throttle: 30, 1')->only('lpswd');
+        $this->middleware('throttle: 45, 1')->only('lpswd');
     }
 
     /**
@@ -35,10 +35,9 @@ class Auth extends Controller
         
         if(true === $auth = $this->auth($credentials))
         {
-            return redirect(route('adminindex'));
+            return $this->redirect('admin.index');
         } else {
-            return redirect()
-                    ->to(route('adminlogin'))
+            return $this->redirect('admin.login')
                     ->withErrors($auth)
                     ->withInput($request->only('shp_id'));
         }
@@ -65,7 +64,7 @@ class Auth extends Controller
         {
             return view('screens.locked');
         } else {
-            return redirect(route('adminindex'));
+            return $this->redirect('admin.index');
         }
     }
     
@@ -100,7 +99,7 @@ class Auth extends Controller
     {
         if(auth()->user() && auth()->logout() == session()->forget('active'))
         {
-            return redirect()->to('/');
+            return $this->redirect('home');
         }
     }
     

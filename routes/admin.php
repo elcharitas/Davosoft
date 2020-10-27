@@ -13,11 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'Home@index')->name('index');
-Route::get('/auth/unlock', 'Auth@locked')->name('lock');
-Route::post('/auth/unlock', 'Auth@unlock')->name('unlock');
-Route::get('/auth/logout', 'Auth@destroy')->name('logout');
-Route::post('/auth', 'Auth@login')->name('auth');
-Route::get('/auth', 'Auth@show')->name('login');
-Route::resource('/category', 'Category');
-Route::resource('category.apps', 'Apps');
+Route::get('/', 'HomeController@index')->name('index');
+Route::get('/auth/unlock', 'AuthController@locked')->name('lock');
+Route::post('/auth/unlock', 'AuthController@unlock')->name('unlock');
+Route::get('/auth/logout', 'AuthController@destroy')->name('logout');
+Route::post('/auth', 'AuthController@login')->name('auth');
+Route::get('/auth', 'AuthController@show')->name('login');
+Route::resource('/category', 'CategoryController');
+Route::resource('category.apps', 'ListController');

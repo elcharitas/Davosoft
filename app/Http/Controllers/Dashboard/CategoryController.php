@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Category;
 use Illuminate\Http\Request;
 
-class Category extends Controller
+class CategoryController extends Controller
 {
     /**
      * Boots up middleware for admin

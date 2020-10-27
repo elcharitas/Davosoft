@@ -25,20 +25,19 @@ class Mailist extends Model
     ];
     
     /**
-     * Verifies an array of inputted data
+     * Ptocess Verification of email/data
      * 
      * @param array $data
      * @return boolean
      */
     public static function verify(array $data)
     {
+        $exists = static::where('email', 'LIKE', $data['email'])->first();
         
-        $valid = static::where('email', 'LIKE', $data['email'])->first();
-        
-        if(!$valid){
-            //send the email
+        if(!$exists){
+            
         } else {
-            return $valid->update($data);
+            return $exists->update($data);
         }
     }
 }

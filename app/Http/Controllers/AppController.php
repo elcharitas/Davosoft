@@ -3,10 +3,9 @@
 namespace App\Http\Controllers;
 
 use Storage;
-use App\App as Data;
 use Illuminate\Http\Request;
 
-class App extends Controller
+class AppController extends Controller
 {
     /**
      * Display a listing of the resource.

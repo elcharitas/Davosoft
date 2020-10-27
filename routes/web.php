@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'Home@index')->name('homepage');
-Route::get('/discover/{id}', 'App@show')->name('preview');
-Route::post('/discover/{id}', 'App@store')->name('download');
-Route::get('/{category}', 'Category@show')->name('category');
-Route::get('/{category}/{id}', 'Category@show')->name('cat');
-Route::get('/{category}/{app}', 'App@index')->name('app');
+Route::get('/', 'HomeController@index')->name('home');
+Route::get('/discover/{id}', 'AppController@show')->name('preview');
+Route::post('/discover/{id}', 'AppController@store')->name('discover');
+Route::get('/{category}', 'CategoryController@show')->name('category');
+Route::get('/{category}/{id}', 'CategoryController@show')->name('category.list');
+Route::get('/{category}/{app}', 'AppController@index')->name('app');

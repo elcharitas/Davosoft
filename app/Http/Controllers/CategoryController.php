@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\App;
 use Illuminate\Http\Request;
 
-class Category extends Controller
+class CategoryController extends Controller
 {
     /**
      * Display the specified category by pages.

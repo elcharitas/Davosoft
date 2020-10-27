@@ -29,7 +29,7 @@ class App extends Model
     /**
      * Eloquent Relationship to Get all related screenshots
      * 
-     * @return Illuminate\Support\Collection
+     * @return Illuminate\Database\Eloquent\Collection
      */
     public function screenshots()
     {
@@ -68,7 +68,7 @@ class App extends Model
      * Gets apps by category using the category slug
      * 
      * @param string $slug
-     * @return Illuminate\Support\Collection|null
+     * @return Illuminate\Database\Eloquent\Collection|null
      */
     public static function category($slug)
     {

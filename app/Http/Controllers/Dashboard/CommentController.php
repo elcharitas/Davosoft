@@ -1,12 +1,23 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Dashboard;
 
-use App\Media as Model;
+use App\Http\Controllers\Controller;
+use App\Comment;
 use Illuminate\Http\Request;
 
-class Media extends Controller
+class CommentController extends Controller
 {
+    /**
+     * Boots up middleware for admin
+     * 
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
     /**
      * Display a listing of the resource.
      *
@@ -41,10 +52,10 @@ class Media extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Dashboard\Media  $media
+     * @param  \App\Comment  $comment
      * @return \Illuminate\Http\Response
      */
-    public function show(Media $media)
+    public function show(Comment $comment)
     {
         //
     }
@@ -52,10 +63,10 @@ class Media extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Dashboard\Media  $media
+     * @param  \App\Comment  $comment
      * @return \Illuminate\Http\Response
      */
-    public function edit(Media $media)
+    public function edit(Comment $comment)
     {
         //
     }
@@ -64,10 +75,10 @@ class Media extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Dashboard\Media  $media
+     * @param  \App\Comment  $comment
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Media $media)
+    public function update(Request $request, Comment $comment)
     {
         //
     }
@@ -75,10 +86,10 @@ class Media extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Dashboard\Media  $media
+     * @param  \App\Comment  $comment
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Media $media)
+    public function destroy(Comment $comment)
     {
         //
     }
