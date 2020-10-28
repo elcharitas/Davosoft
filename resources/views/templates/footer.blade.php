@@ -1,4 +1,5 @@
                     <br/>
+                    @if(!$route->startsWith('admin'))
                     <div class="fixed-bottom d-md-none">
                         <div class="card container quick-nav" style="display: none">
                             <div class="justify-content-center">
@@ -34,6 +35,7 @@
                             </div>
                         </div>
                     </div>
+                    @endif
                     </div>
                     
                     <footer class="content-footer">

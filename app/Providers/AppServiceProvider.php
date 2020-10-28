@@ -2,7 +2,7 @@
 
 namespace App\Providers;
 
-use Blade;
+use Str, Blade, Route, View;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -24,6 +24,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        /**
+         * A Closure Based blade directive to set/retrieve the current title
+         */
         Blade::directive('title', function ($exp) {
             
             if(empty($exp)){
@@ -31,6 +34,13 @@ class AppServiceProvider extends ServiceProvider
             }
             
             return "<?php \$title = $exp; ?>";
+        });
+        
+        /**
+         * We need some variables to be global & some headers shared
+         */
+        View::composer('*', function ($view) {
+            $view->with('route', Str::of(Route::currentRouteName()));
         });
     }
 }
